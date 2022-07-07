@@ -13,35 +13,42 @@
     <header class="hero">
       <div class="hero__navbar">
         <nav class="navbar">
-          <a href="#">Home</a>
-          <a href="#about">Acerca de mi</a>
-          <a href="#services">Servicios</a>
-          <a href="#experience">Experiencia</a>
-          <a href="#folder">Mi portafolio</a>
-          <a href="#contact">Contacto</a>
+          <input type="checkbox" name="" id="nav__checkbox" class="nav__checkbox">
+          <label for="nav__checkbox" class="nav__togle">
+          <img src="assets/img/menu 1.svg" class="menu" alt="menu">
+          <img src="assets/img/x_close.svg" class="close" alt="close">
+          </label>
+          <ul class="nav__menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Acerca de mi</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#folder">Mi portafolio</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          </ul>
         </nav>
       </div>
-            
+    </header>
+
+        <!-- Contenido principal-->
+    <main class="propi"> 
+    <section class="home" id="home">
       <div class="hero__container">
         <div class="hero-img">
           <img src="assets/img/image.png" alt="Foto bri">
+          <div class="hero__social">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+          </div>
         </div>
           <div class="hero__info">
 						<h1 class="hero__title">Mobile App Designer</h1>
             <h2 class="hero__subbtitle">Creo, diseño y desarrollo para darle el valor a tu producto.</h2>
 					</div>
-          <div class="social__container">
-            <div class="hero__social">
-              <a href="#"><i class='bx bxl-linkedin'></i></a>
-              <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-              <a href="#"><i class='bx bxl-twitter' ></i></a>
-            </div>
-          </div>
         </div>
-    </header>
-
-        <!-- Contenido principal-->
-    <main class="propi">
+    </section>
+      
       <section class="about">
         <h2 id="about" class="about__title">Acerca de mí</h2>
         <p class="about__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus optio velit omnis doloribus iusto officia delectus perspiciatis ipsa. Esse aliquid qui recusandae pariatur necessitatibus cumque fuga eum voluptatem nihil voluptas hic commodi aliquam alias architecto fugit ex minima labore saepe cupiditate eligendi, dolorum praesentium unde atque itaque? Optio, unde.</p>
@@ -51,19 +58,19 @@
         <h2 id="services" class="service__tile">Servicios</h2>
           <div class="service__container">
             <div class="service-icon">
-              <img src="assets/img/iconoir_design-pencil.svg" alt="">
-              <h4 class="service__icon-title">UX/UI Design</h4>
+              <img src="assets/img/html_html5_icon.png" alt="html">
+              <h4 class="service__icon-title">HTML</h4>
               <p class="service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
               <div class="service-icon">
-                <img src="assets/img/majesticons_speakerphone-line.svg" alt="">
-                <h4 class="service__icon-title">Marketing</h4>
+                <img src="assets/img/css3_icon.png" alt="css">
+                <h4 class="service__icon-title">CSS</h4>
                 <p class="service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
 
               <div class="service-icon">
-                <img src="assets/img/feather_search.svg" alt="">
-                <h4 class="service__icon-title">Research</h4>
+                <img src="assets/img/javascript_icon.png" alt="JavaScript">
+                <h4 class="service__icon-title">JavaScript</h4>
                 <p class="service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
           </div>
@@ -73,19 +80,9 @@
         <h2 id="experience" class="exper__title">Experiencia</h2>
         <div class="experience__container">
           <div class="experience__icon">
-            <img src="assets/img/ant-design_amazon-outlined.svg" alt="Amazon">
-            <p>UI Designer</p>
-            <h5>2 años</h5>
-          </div>
-          <div class="experience__icon">
-            <img src="assets/img/cib_airbnb.svg" alt="airbnb">
-            <p>Senior UI/UX</p>
-            <h5>1 años</h5>
-          </div>
-          <div class="experience__icon">
-            <img src="assets/img/akar-icons_google-fill.svg" alt="google">
-            <P>Product Designer</P>
-            <h5>2 años</h5>
+            <img src="assets/img/logo_academlo 2.png" alt="Academlo">
+            <p>Desarrollo Web</p>
+            <h5>2022</h5>
           </div>
         </div>
       </section>
@@ -103,12 +100,12 @@
         <h2 id="contact" class="contact__title">Contacto</h2>
         <div class="contact__container">
           <div class="contact__icon">
-            <img src="assets/img/mail 3.svg" alt=""> 
+            <img src="assets/img/mail 3.svg" class="contacts" alt="correo briggitte"> 
             <h4 class="contact__icon-title">Email</h4>
             <p class="contact__cont">briggittemerchan6@gmail.com</p>
             </div>
             <div class="contact__icon">
-              <img src="assets/img/phone 3.svg" alt=""> 
+              <img src="assets/img/phone 3.svg" class="contacts" alt="telefono briggitte"> 
               <h4 class="contact__icon-title">Teléfono</h4>
               <p class="contact__cont">123456789</p>
               </div>

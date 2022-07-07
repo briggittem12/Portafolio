@@ -1,6 +1,6 @@
 :root {
     
-    --color-primary: #edcdfb;
+    --color-primary: #ffd4fb;
     --color-letter: #34b0be;
     --color-secundary: #34b0be;
     --color-fondo: #ffffff;
@@ -28,6 +28,61 @@ img {
     width: 100%;
   }
 
+  /*Barra de navegacion*/
+.navbar {
+  border-bottom: 1px solid transparent;
+}
+.nav__togle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0 1rem;
+  right: 0;
+}
+
+.nav__togle img {
+  width: 1rem;
+  color: var(--color-fondo);
+}
+
+.nav__togle .close {
+  display: none;
+}
+
+.nav__togle .close,
+.nav__togle .menu {
+  margin-top: 0.3rem;
+}
+
+.nav__checkbox {
+  display: none;
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem;
+}
+.nav__menu li {
+  list-style-type: none;
+  display: none;
+}
+
+#nav__checkbox:checked ~ ul.nav__menu li {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__togle .close {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__togle .menu {
+  display: none;
+}
+
+/*Contenedor Header*/
+
 .hero {
   background-color: var(--color-primary);
 }
@@ -49,8 +104,9 @@ a {
   font-size: 1rem;
   gap: 1rem;
 }
+
 .hero__navbar a {
-  color: var(--color-fondo);
+  color: black;
   text-decoration: none;
   padding: 0 10px;
   gap: 0.7rem;
@@ -103,6 +159,7 @@ color: var(--color-secundary);
   gap: 1.5rem;
   align-items: flex-end;
   padding: 10px;
+  position: absolute;
 }
 
 .hero__social i {
@@ -114,10 +171,7 @@ color: var(--color-secundary);
 transition: all .3s ease-in-out;
 }
 
-.propi {
-  margin: 0 auto;
-}
-
+/*About us*/
 .about {
   text-align: center;
 }
@@ -130,6 +184,7 @@ transition: all .3s ease-in-out;
   font-size: 1rem;
 }
 
+/*Servicios*/
 .service__container {
   display: flex;
   flex-direction: row;
@@ -158,6 +213,7 @@ transition: all .3s ease-in-out;
   padding: 5px;
 }
 
+/*Experinecia*/
 .experience__container {
   display: flex;
   flex-direction: row;
@@ -165,13 +221,19 @@ transition: all .3s ease-in-out;
   gap: 1rem; 
 }
 
+.experience__icon img{
+  background-color: var(--color-primary);
+  width: 10%;
+  height: 20%;
+}
+/*Portafolio*/
 
 .folder__img {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   padding: 20px;
 }
-
+/*Contacto*/
 .contact__container {
  display: flex;
  flex-direction: row;
@@ -179,12 +241,12 @@ transition: all .3s ease-in-out;
 
 }
 
-.contact__icon {
-  
+.contact__icon img {
+  background-color: var(--color-primary);
+  width: 40%;
+  height: 50%;
 }
-.contact__icon  {
-  
-}
+
 
 .contact__icon-title {
   font-size: 20px;
@@ -194,6 +256,8 @@ transition: all .3s ease-in-out;
 .contact__cont {
   font-size: 10px;
 }
+
+/*Footer*/
 .footer {
   display: flex;
   flex-direction: column;
@@ -201,17 +265,17 @@ transition: all .3s ease-in-out;
   align-content: center;
   margin: 0;
   font-size: medium;
-  color: var(--color-secundary);
+  color: black;
   background-color: var(--color-primary);
 }
 
-
+/*dispositivos pequeños*/
 @media (min-width: 260px) {
   a { 
     font-size: 0.7rem;
   }
   .hero a {
-    color: var(--color-fondo);
+    color: black;
     text-decoration: none;
   }
   .hero a:root {
@@ -237,21 +301,16 @@ transition: all .3s ease-in-out;
     text-align: center;
     font-size: large;
   }
-  .social__container {
-    flex-direction: column;
-
-  }
-
+  
+.hero__social {
+  align-items: center;
+}
 
   .hero__social i {
     font-size: 30px;
   
   }
 
-  .hero__social i:hover{
-  color: rgb(243, 107, 57);
-  transition: all .3s ease-in-out;
-  }
 
   .propi {
     margin: 0 auto;
@@ -301,15 +360,15 @@ transition: all .3s ease-in-out;
 
   .contact__container {
     flex-direction: column;
+    gap: 1rem;
+    align-items: center;
    
    }
    
    .contact__icon {
-     
+    width: 3.5;
    }
-   .contact__icon {
-     
-   }
+  
     
   .contact__icon-title {
     font-size: 20px;
@@ -325,17 +384,30 @@ transition: all .3s ease-in-out;
     align-content: center;
     margin: 0;
     font-size: medium;
-    color: var(--color-secundary);
+    color: black;
     background-color: var(--color-primary);
   }
 }
+
+/*dispositivos medianos*/
 
 @media (min-width: 760px) {
   .hero__navbar {
     align-items: flex-end;
     justify-content: flex-end;
   }
-  
+  .navbar {
+    border: 0;
+  }
+  .nav__togle {
+    display: none;
+  }
+  .nav__menu {
+    flex-direction: row;
+  }
+  .nav__menu li {
+    display: block;
+  }
   a { 
     font-size: 1rem;
     gap: 1rem;
@@ -454,13 +526,7 @@ transition: all .3s ease-in-out;
   
   }
   
-  .contact__icon {
-    
-  }
-  .contact__icon  {
   
-  }
-
   .contact__icon-title {
     font-size: 20px;
     padding: 10px;
@@ -475,11 +541,13 @@ transition: all .3s ease-in-out;
     align-content: center;
     margin: 0;
     font-size: medium;
-    color: var(--color-secundary);
+    color: black;
     background-color: var(--color-primary);
   }
  
 }
+
+/*dispositivos grandes*/
 
 @media (min-width: 992px) {
   .hero__navbar {
@@ -487,7 +555,20 @@ transition: all .3s ease-in-out;
     justify-content: flex-end;
     padding: 10px;
   }
-  
+  .navbar {
+    border: 0;
+  }
+
+  .nav__togle {
+    display: none;
+  }
+  .nav__menu {
+    flex-direction: row;
+  }
+  .nav__menu li {
+    display: block;
+  }
+
   a { 
     font-size: 1rem;
     gap: 1rem;
@@ -579,7 +660,7 @@ transition: all .3s ease-in-out;
 
   .service-icon {
     background-color: var(--color-primary);
-    width: 80%;
+    width: 40%;
     height: 50%;
   }
   .service-icon img {
@@ -597,28 +678,27 @@ transition: all .3s ease-in-out;
     padding: 5px;
   }
 
+  .experience__icon {
+    background-color: var(--color-primary);
+    width: 40%;
+    height: 50%;
+  }
+
   .folder__img {
     flex-wrap: wrap;
     flex-direction: row;
     padding: 20px;
+    gap: 1rem;
   }
 
-  .folder__img img{
-    width: 50%;
-    height: 50%;
-  }
+
   .contact__container {
    flex-direction: row;
    justify-content: space-around;
   
   }
   
-  .contact__icon img{
-    font-size: 20px;
-  }
-  .contact__icon {
-    
-  }
+ 
 
   .contact__icon-title {
     font-size: 20px;
@@ -634,7 +714,7 @@ transition: all .3s ease-in-out;
     align-content: center;
     margin: 0;
     font-size: medium;
-    color: var(--color-secundary);
+    color: black;
     background-color: var(--color-primary);
   }
  
