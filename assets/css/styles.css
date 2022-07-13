@@ -40,7 +40,7 @@ img {
 }
 
 .nav__togle img {
-  width: 1.5rem;
+  width: 2rem;
   background-color: #d76be0;
   border-radius: 10%;
 }
@@ -163,12 +163,12 @@ color: var(--color-secundary);
   gap: 1.5rem;
   flex-direction: row;
   align-self: center;
-  position: absolute;
+  position: relative;
 }
 
 .hero__social i {
   background-color: var(--color-primary);
-  border-radius: 80%;
+  border-radius: 20%;
   color: var(--color-fondo);
 }
 
@@ -252,26 +252,29 @@ transition: all .3s ease-in-out;
 
 /*Contacto*/
 .contact__container {
- display: flex;
- flex-direction: row;
- justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
 
+.contact__icon {
+  justify-content: center;
 }
 
 .contact__icon img {
   background-color: var(--color-primary);
-  border-radius: 50%;
-  width: 40%;
+  border-radius: 20%;
+  width: auto;
 }
-
 
 .contact__icon-title {
   font-size: 20px;
-  padding: 10px;
   margin: 0;
 }
 .contact__cont {
   font-size: 10px;
+  margin-bottom: 10px;
 }
 
 /*Footer*/
@@ -387,17 +390,11 @@ transition: all .3s ease-in-out;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
-   
    }
    
-   .contact__icon {
-    width: 3.5;
-   }
-  
     
   .contact__icon-title {
     font-size: 20px;
-    padding: 10px;
     margin: 0;
   }
   .contact__cont {
@@ -565,7 +562,6 @@ transition: all .3s ease-in-out;
   }
   .contact__icon-title {
     font-size: 20px;
-    padding: 10px;
     margin: 0;
   }
   .contact__cont {
@@ -731,7 +727,6 @@ transition: all .3s ease-in-out;
 
   .contact__icon-title {
     font-size: 20px;
-    padding: 10px;
     margin: 0;
   }
   .contact__cont {
