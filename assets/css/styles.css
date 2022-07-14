@@ -1,7 +1,7 @@
 :root {
     
-    --color-primary: #ffd4fb;
-    --color-letter: #d76be0;
+    --color-primary: #d1bffd;
+    --color-letter: #ecb1f1;
     --color-secundary: #fdfdfd;
     --color-fondo: rgb(2, 1, 1);
     --font: 'Poppins', sans-serif;
@@ -41,7 +41,7 @@ img {
 
 .nav__togle img {
   width: 2rem;
-  background-color: #d76be0;
+  background-color: #f8a7ff;
   border-radius: 10%;
 }
 
@@ -139,16 +139,14 @@ color: var(--color-secundary);
   margin: 40px 20px 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 .hero__title {
-  text-align: left;
   font-size: xx-large;
   margin: 20px;
 }
 
 .hero__subbtitle {
-  text-align: left;
   font-size: large;
   margin: 20px;
 }
@@ -198,13 +196,14 @@ transition: all .3s ease-in-out;
   flex-direction: row;
   align-items: center;
   gap: 1rem;
-  
+  margin: 2rem;
 }
 
 .service-icon {
   background-color: var(--color-primary);
   width: 80%;
   height: 50%;
+  box-shadow: 0px 1px 6px 0px;
 }
 .service-icon img {
   width: 30%;
@@ -264,6 +263,7 @@ transition: all .3s ease-in-out;
   background-color: var(--color-primary);
   border-radius: 20%;
   width: auto;
+  box-shadow: 0 2px 8px;
 }
 
 .contact__icon-title {
@@ -446,7 +446,6 @@ transition: all .3s ease-in-out;
   .hero__container {
     flex-direction: row-reverse;
     flex-wrap: nowrap;
-    gap: 1rem;
     margin-top: 5rem;
   }
 
@@ -465,16 +464,13 @@ transition: all .3s ease-in-out;
   .hero__info {
     margin: 40px 20px 0;
     flex-direction: column;
-    align-items: center;
   }
   .hero__title {
-    text-align: left;
     font-size: xx-large;
     margin: 20px;
   }
 
   .hero__subbtitle {
-    text-align: left;
     font-size: large;
     margin: 20px;
   }
@@ -617,7 +613,6 @@ transition: all .3s ease-in-out;
   .hero__container {
     flex-direction: row-reverse;
     flex-wrap: nowrap;
-    gap: 1rem;
   }
 
   .hero__img-container {
@@ -648,6 +643,166 @@ transition: all .3s ease-in-out;
     text-align: left;
     font-size: large;
     margin: 20px;
+  }
+
+  .hero__social {
+    gap: 1.5rem;
+    flex-direction: column;
+    align-self: center;
+    padding: 10px;
+    border-radius: 20%;
+  }
+  
+  .hero__social i {
+      font-size: 50px;
+      background-color: var(--color-primary);
+      
+  }
+
+  .hero__social i:hover{
+  color: var(--color-secundary);
+  transition: all .3s ease-in-out;
+  }
+
+  .propi {
+    margin: 0 auto;
+  }
+  
+  .about {
+    text-align: center;
+  }
+  
+  .about__title {
+    font-size: 2rem;
+  }
+
+  .about__p {
+    font-size: 1rem;
+  }
+  
+  .service__container {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    
+  }
+
+  .service-icon {
+    background-color: var(--color-primary);
+    width: 40%;
+    height: 50%;
+  }
+  .service-icon img {
+    width: 30%;
+    height: 30%;
+    margin-top: 2rem;
+    color: #b4b4b4;
+  }
+
+  .service__icon-title {
+    font-size: 20px;
+  }
+  .service__text {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+
+  .experience__icon img{
+    width: 100%;
+  }
+
+  .contact__container {
+   flex-direction: row;
+   justify-content: space-around;
+  
+  }
+
+  .contact__icon-title {
+    font-size: 20px;
+    margin: 0;
+  }
+  .contact__cont {
+    font-size: 10px;
+  }
+  .footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0;
+    font-size: medium;
+    color: black;
+    background-color: var(--color-primary);
+  }
+ 
+}
+
+/* Dispositivos pc*/
+@media (min-width: 1200px) {
+  .hero__navbar {
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  .navbar {
+    border: 0;
+  }
+
+  .nav__togle {
+    display: none;
+  }
+  .nav__menu {
+    flex-direction: row;
+  }
+  .nav__menu li {
+    display: block;
+  }
+
+  a { 
+    font-size: 1rem;
+    gap: 1rem;
+  }
+  .hero__navbar a {
+    color: var(--color-fondo);
+    text-decoration: none;
+    padding: 0 10px;
+    gap: 0.7rem;
+  }
+  .hero__navbar i:root {
+  color: var(--color-secundary);
+  transition: all .3s ease-in-out;
+  }
+
+  .hero__container {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+
+  .hero__img-container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .hero-img img {
+    width: 80%;
+    height: 100%;
+    margin: 0;
+  }
+  .hero__info {
+    margin: 40px 20px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__title {
+    font-size: xx-large;
+    margin: 20px;
+  }
+
+  .hero__subbtitle {
+    font-size: large;
   }
 
   .hero__social {
