@@ -123,7 +123,6 @@ color: var(--color-secundary);
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: nowrap;
-  gap: 1rem;
 }
 
 .hero__img-container {
@@ -131,7 +130,6 @@ color: var(--color-secundary);
   height: 200px;
   display: flex;
   flex-direction: column;
-
 }
 
 .hero-img img {
@@ -163,7 +161,7 @@ color: var(--color-secundary);
   gap: 1.5rem;
   flex-direction: row;
   align-self: center;
-  position: relative;
+  position: unset;
 }
 
 .hero__social i {
@@ -486,7 +484,7 @@ transition: all .3s ease-in-out;
     flex-direction: column;
     align-self: center;
     padding: 10px;
-    position: relative;
+    position: unset;
   }
   
   .hero__social i {
