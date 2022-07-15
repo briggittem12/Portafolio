@@ -89,6 +89,7 @@ img {
   position:fixed;
   top:0;
   width:100%;
+  z-index: 1;
 }
 
 
@@ -159,7 +160,7 @@ color: var(--color-secundary);
   gap: 1.5rem;
   flex-direction: row;
   align-self: center;
-  position: unset;
+  position: relative;
 }
 
 .hero__social i {
@@ -480,7 +481,7 @@ transition: all .3s ease-in-out;
     flex-direction: column;
     align-self: center;
     padding: 10px;
-    position: unset;
+    position: relative;
   }
   
   .hero__social i {
